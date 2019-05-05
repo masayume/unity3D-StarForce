@@ -21,8 +21,8 @@ TagManager:
   - EnemyBullets
   - Foreground
   - Background
-  - 
-  - 
+  - PlayerPowerUpCollider
+  - PowerUp
   - 
   - 
   - 
