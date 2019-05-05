@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\ShootQ.cs" />
      <Compile Include="Assets\Scripts\SpawnObjects.cs" />
+     <Compile Include="Assets\Scripts\SpawnWave.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/Desktop/@PROJECTS/50. APPS/unity3D/Space Shooter 2014/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

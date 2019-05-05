@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUpManager : MonoBehaviour
 {
-    public GameObject[] weapons;
+    public Shoot[] weapons;
     private int powerLevel = -1;
 
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class PowerUpManager : MonoBehaviour
         powerLevel++;
         if (powerLevel < weapons.Length)
         {
-            weapons[powerLevel].SetActive(true);
+            weapons[powerLevel].enabled = true;
         }
     }
 
