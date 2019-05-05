@@ -68,6 +68,8 @@
      <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\MoveUp.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PowerUp.cs" />
+     <Compile Include="Assets\Scripts\PowerUpManager.cs" />
      <Compile Include="Assets\Scripts\RandomLinearMove2D.cs" />
      <Compile Include="Assets\Scripts\RotateBackAndForth2d.cs" />
      <Compile Include="Assets\Scripts\SeekingMissile.cs" />

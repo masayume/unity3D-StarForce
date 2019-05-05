@@ -5,11 +5,15 @@ using UnityEngine;
 public class GibOnTrigger : MonoBehaviour
 {
     public GameObject gib = null;
+    public GameObject objectToDestroy = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (objectToDestroy == null)
+        {
+            objectToDestroy = gameObject;
+        }
     }
 
     // Update is called once per frame
@@ -17,9 +21,10 @@ public class GibOnTrigger : MonoBehaviour
     {
         if (gib != null)
         {
-            Instantiate(gib, transform.position, Quaternion.identity);
+            // Instantiate(gib, transform.position, Quaternion.identity);
+            Instantiate(gib, transform.position, gib.transform.rotation);
         }
-        Destroy(gameObject);
+        Destroy(objectToDestroy);
 
     }
 
