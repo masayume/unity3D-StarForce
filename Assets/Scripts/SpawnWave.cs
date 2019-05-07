@@ -10,6 +10,8 @@ public class SpawnWave : MonoBehaviour
     public int numberOfEnemies;
 
     private int enemyCount;
+    private Vector3 lastEnemyPosition;
+    private bool powerUpGenerated = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +25,10 @@ public class SpawnWave : MonoBehaviour
     {
         if (enemyCount == 0)
         {
-            if (transform.childCount == 0)
+            if (transform.childCount <= 0 && !powerUpGenerated)
             {
-                Instantiate(powerUp, transform.position, transform.rotation);
+                powerUpGenerated = true;
+                Instantiate(powerUp, lastEnemyPosition, transform.rotation);
                 Destroy(gameObject);
             }
         }
@@ -42,6 +45,9 @@ public class SpawnWave : MonoBehaviour
         }
     }
 
-
+    void Dead(Vector3 position)
+    {
+        lastEnemyPosition = position;
+    }
 
 }

@@ -24,6 +24,11 @@ public class GibOnTrigger : MonoBehaviour
             // Instantiate(gib, transform.position, Quaternion.identity);
             Instantiate(gib, transform.position, gib.transform.rotation);
         }
+
+        if (transform.parent != null)
+        {
+            transform.parent.SendMessage("Dead", transform.position, SendMessageOptions.DontRequireReceiver);
+        }
         Destroy(objectToDestroy);
 
     }

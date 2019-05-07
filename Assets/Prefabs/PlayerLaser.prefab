@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8371938798627365539}
   - component: {fileID: 8856665593549876933}
   - component: {fileID: -8690704192794423774}
+  - component: {fileID: -328618729136429128}
   m_Layer: 10
   m_Name: PlayerLaser
   m_TagString: Untagged
@@ -60,6 +61,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-328618729136429128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8294170228514535229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25c6020441c1cc44ae83305c8e175d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gib: {fileID: 0}
+  objectToDestroy: {fileID: 0}
 --- !u!1 &8605958746085403015
 GameObject:
   m_ObjectHideFlags: 0
